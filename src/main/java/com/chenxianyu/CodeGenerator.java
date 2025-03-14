@@ -20,7 +20,7 @@ public class CodeGenerator {
                             .xml("mappers"); // 设置 Mapper XML 文件包名
                 })
                 .strategyConfig(builder -> {
-                    builder.addInclude("file") // 设置需要生成的表名
+                    builder.addInclude("user,user_address,user_favorite,pet_category,pet_category,pet_health,product_category,brand,product,cart,orders,order_item,payment,coupon,user_coupon,promotion,promotion_item,announcement,banner,operation_log") // 设置需要生成的表名
                             .entityBuilder()
                             .enableLombok() // 启用 Lombok 注解，包括 @Data
                             .enableTableFieldAnnotation() // 启用 @TableField 注解
